@@ -1,5 +1,5 @@
 # 🚀 Formação Front-end Essencial: HTML, CSS, JS & React
-##✨ Sobre o Projeto
+## ✨ Sobre o Projeto
 Bem-vindo(a) ao repositório da minha jornada de aprendizado na Formação Front-end Essencial, um curso intensivo com o professor Matheus Battisti! 🎓
 
 Este projeto serve como um diário de bordo digital, contendo todos os estudos, exercícios práticos, projetos desenvolvidos e anotações referentes às aulas de HTML, CSS, JavaScript e React. Meu objetivo é consolidar o conhecimento adquirido, praticar continuamente e ter um portfólio acessível para demonstrar minhas habilidades em desenvolvimento web.
