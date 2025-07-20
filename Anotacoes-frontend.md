@@ -79,5 +79,52 @@ Não tem valor semântico, é um contêiner, delimita elementos dentro dela para
 Iniciar VSCode, digitar `!` e apertar `Tab`;
 Cria automaticamente uma estrutura `html`;
 
+- **CSS**:
+-Maneira de adicionar o CSS ao HTML:
+1. Inline: estilos adicionados por um atributo;
+2. Internal: CSS adicionado na tag head; consegue atingir mais elementos de uma vez só;
+3. External: CSS adicionado através de um arquivo externo e depois importado ao HTML.
 
+- **Anatomia do CSS**:
+Aplicamos CSS a um elemento; seleciona o elemento primeiro, através da tag, depois colocar propriedades e valores;
+1. Propriedades: tudo que podemos mudar no elemento (cor, tamanho de fonte, altura, largura, borda);
+2. Valor: valor que vai alterar a propriedade, como ela vai ficar após alteração;
+color: red; (propriedade: valor;).
 
+- **Inline CSS**:
+Pode ser adicionado sem selecionar elemento;
+Atributo `style` nos permite escrever as regras do CSS;
+Exemplo: `style="color: red;"`
+
+- **Múltiplas regras no CSS**:
+Podemos adicionar várias regras separadas por ponto e vírgula, gerando união de estilos;
+
+- **Internal CSS**:
+Técnica melhor que inline; colocar todos os estilos na tag `head`; `<style></style>` no head, colocar a tag no lugar dela `<p></p>` ou `<h1></h1>` ou outra, depois chamar (como apontado abaixo no texto) lá no head;
+Regras também precisam estar entre a tag `style`;
+Desta maneira, é necessário selecionar o elemento alvo:
+```
+ p {
+      color: red;
+ }
+```
+ 
+- **External CSS**:
+Para adicionar CSS nesse formato é necessário criar um arquivo `.css`, numa pasta chamada `css`;
+Deve ser importada por nós com a tag `link`;
+ 
+- **Ordem do CSS**:
+Inline > Internal = External > padrão do navegador; isso vale para um mesmo elemento, para elementos diferentes, carrega todas normalmente;
+Entre Internal e External, a última aplicada será a carregada; verificar a ordem da chamada no `index.html`;
+
+- **Múltiplos arquivos do CSS**:
+É possível ter mais de uma folha de estilo no mesmo projeto;
+Todas precisam ser importadas na tag `head`;
+Os importados por último tem prioridade;
+Boa prática: possibilita a divisão de CSS por páginas;
+
+- **Desafio 2 do CSS**:
+crie arquivo css titles.css
+importe para o html
+estilize os h4
+crie h4 no html
