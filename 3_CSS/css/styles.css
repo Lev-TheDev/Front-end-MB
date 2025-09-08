@@ -7,6 +7,54 @@ h3 {
     color: green;
 }
 
+h4 {
+    background-color: violet;
+    color: white;
+}
+
 p {
     color: blueviolet;
+}
+
+/* classes */
+.paragraph {
+    background-color: black;
+    color: orange;
+    font-weight: bold;
+    padding: 10px;
+}
+/* id */
+#exclusive-title {
+    background-color: turquoise;
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+/* ordem das regras */
+h2 {
+    border-bottom: 2px solid red;
+}
+
+.titulo {
+    border-bottom: 3px solid blue;
+}
+
+#algum-titulo {
+    border-bottom: 4px solid green;
+}
+
+/* nomes de cores */
+.color-name {
+    color:rgb(228, 65, 97)
+}
+/* valores hexadecimais */
+.color-hex {
+    color: #41e47f;
+    /* Se a cor for repetir elementos, podemos abreviar, como #RGB #FFF #123 (#112233) */
+}
+
+/* valores rgba */
+.color-rgba {
+    color: rgba(34, 207, 153, 0.48);
 }

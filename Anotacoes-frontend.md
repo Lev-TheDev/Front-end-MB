@@ -128,3 +128,25 @@ crie arquivo css titles.css
 importe para o html
 estilize os h4
 crie h4 no html
+
+- **Classes e Ids**:
+São atributos de tags do HTML, relacionadas ao CSS;
+Ids são usados para elementos únicos; classes servem para um ou mais; Id único na página;
+
+- **Classes**:
+Inseridas por atributo de HTML;
+Valor do atributo é o nome da classe; [ex.: classe btn para botão que aparece x vezes no projeto]
+Para elementos que se repetem;
+
+- **Ids**:
+Atributos do HTML;
+Para elemento único, não repete o nome para a mesma página; pode ter dois IDs diferentes;
+
+- **Ordem dos seletores**:
+Se a tag tiver vários atributos, ordem: `id > class > seletor de tag`;
+
+- **Cores no CSS**:
+Nomes, RGB, Hexadecimal, HSL;
+HEX: consiste em inserir 6 dígitos ; vermelho, verde, azul; 0 a 9, A a F; 
+RGBA: A vem de alpha; muda opacidade da cor; valores do A de 0 (transparente) a 1 (totalmente visível); sintaxe = rgba(34, 207, 153, 0.67)
+BACKGROUND COLOR: sintaxe = `background-color: "cor";`
