@@ -149,4 +149,111 @@ Se a tag tiver vários atributos, ordem: `id > class > seletor de tag`;
 Nomes, RGB, Hexadecimal, HSL;
 HEX: consiste em inserir 6 dígitos ; vermelho, verde, azul; 0 a 9, A a F; 
 RGBA: A vem de alpha; muda opacidade da cor; valores do A de 0 (transparente) a 1 (totalmente visível); sintaxe = rgba(34, 207, 153, 0.67)
+HSL: Hue, Saturation, Lightness;
 BACKGROUND COLOR: sintaxe = `background-color: "cor";`
+BACKGROUND OPACITY = valores de 0(invisível) a 1 (totalmente visível) `opacity`;
+__Dica__ = alterando o "a" do RGBA tem-se a opacidade apenas na cor de fundo, não em todo o conteúdo;
+
+- **BG Images**:
+Regra = `background-image: url("pasta/imagem.jpg")`;
+Centralizar img no bg = `background-position: center` ou `background-size: cover`;
+
+- **Box Model**:
+__Quatro partes__:
+1. Altura e Largura = conteúdo do elemento, muda tamanho do elemento na tela, alguns elementos tem largura block `block elements` em 100%;
+2. Padding (espaçamento interno do elemento, para letras não ficarem muito próximas da extremidade do elemento p. ex.) = espaço entre conteúdo e borda do elemento, distância entre conteúdo (texto) e extremidade do elemento;
+Padding individual = `padding-top` (left, right, bottom);
+3. Border (elemento decorativo, pode ou não ser adicionado);
+4. Margin (espaçamento externo, distância de um elemento a outro);
+
+- **Shorthand Properties**:
+Adicionar paddings a todas as direções com uma regra (top, right, bottom, left);
+Regra = `padding: 10px 5px 12px 20px`;
+Shorthand também pode ser aplicada a `margin`;
+
+- **Padding e Width**:
+Padding é adicionada a largura do elemento, que pode ser um problema;
+Se um elemento tem 200px de width e 25px de padding, tamanho horizontal total seria 250px;
+Resolve-se com a regra `box-sizing` e o valor de `border-box` = elemento vai respeitar o tamanho que está em width!
+Padding é incluído dentro do valor da largura;
+
+- **Bordas**:
+Elemento central entre padding e margin; decorativo;
+Regra definida em = tamanho; aspecto; cor da borda;
+Borda arredondada = `border-radius: 5px`;
+
+- **Margin**:
+Espaçamento externo do elemento; lados individuais e shorthand também são possíveis;
+
+- **Alinhamento de texto**:
+Padrão = à esquerda;
+Regra = `text-align` podemos configurar `center` ou `right`;
+
+- **Text Decoration**:
+Efeitos ao texto;
+Underline, linha que corta o texto;
+A tag `a` tem um `underline` por padrão; pode ser removida com text decoration;
+
+- **Text Transform**:
+Altera como o texto é exibido; uppercase / lowercase;
+Cuidado: **O CSS deve ser aplicado quando queremos texto `uppercase`, nunca escreva o texto com `CAPSLOCK` no HTML;
+
+- **Espaçamento de letras**:
+Regra = `letter-spacing: 5px`;
+
+- **Fontes**:
+Regra = `font-family`;
+Opções = `Serif, Sans-serif, Monospace, Cursive, Fantasy`;
+É possível adicionar fontes externas, por exemplo com Google Fonts;
+Propriedade = `font-style` para mudar o aspecto das letras; 
+Valores = `normal`, `italic` e `oblique`;
+
+- **Font weight**:
+Deixa mais fina ou grossa a fonte; valores de 100 a 900; bold = 600;
+
+- **Font size**:
+Base em `16px`;
+
+- **Display**:
+Elementos são `block` ou `inline`; `block` ocupa a linha toda, `inline` ficam os elementos um do lado do outro;
+Tag `div` é `BLOCK` e a tag `span` é `INLINE`;
+Com a regra `display` podemos mudar este comportamento;
+
+- **Escondendo elemento**:
+Ocultar = regra `display: none`;
+Ainda consta no html, mas fica oculto;
+A principal diferença é que `display: none` remove o elemento completamente do fluxo do documento, sem ocupar espaço, enquanto `visibility: hidden` o esconde visualmente, mas mantém o espaço que ele ocuparia na página. O `display: none` é usado quando você quer que outros elementos ocupem o espaço do elemento oculto, já `visibility: hidden` é útil se você precisa esconder o conteúdo, mas preservar a estrutura da página.
+
+- **Positions dos elementos**:
+Possibilidades: relative, fixed, absolute, sticky e mais;
+Padrão = `static`;
+
+- **Position static**:
+Por ser padrão, não altera o elemento;
+Se for `static`, não se alterará com valores `top, left, right, bottom`;
+
+- **Position relative**:
+Valores `top, left, right, bottom` movem o elemento pela tela; segue o fluxo do HTML ainda;
+Não usamos esses valores de position com `relative` normalmente;
+
+- **Position absolute**:
+Valores `top, left, right, bottom` movem o elemento pela tela TODA;
+QUEBRA o fluxo do HTML;
+Não usamos esses valores de position com `relative` normalmente;
+
+- **Position relative com absolute**:
+Elemento com position `absolute` se liga ao elemento mais próximo com position `relative`, se não ele se liga ao `body`;
+Usando container com posição `relative` podemos controlar melhor a área de ação do `absolute`;
+
+- **Position fixed**:
+Elemento permanece na mesma posição, mesmo após `scroll`;
+
+- **Position sticky**:
+Também fixa na tela;
+Mas quando elemento volta à sua posição original ele se comporta como `relative`;
+A posição original é onde ele foi inserido no HTML;
+
+- **Z-index**:
+Se dois elementos ocuparem a mesma posição ou colidirem, podemos escolher qual será exibido;
+Elemento com MAIOR VALOR permanece;
+Padrão = prevalece acima dos outros elementos quem está mais abaixo do HTML;

@@ -4,7 +4,7 @@ body {
 }
 
 h3 {
-    color: green;
+    color: greenyellow;
 }
 
 h4 {
@@ -12,9 +12,9 @@ h4 {
     color: white;
 }
 
-p {
+/*p {
     color: blueviolet;
-}
+}*/
 
 /* classes */
 .paragraph {
@@ -57,4 +57,422 @@ h2 {
 /* valores rgba */
 .color-rgba {
     color: rgba(34, 207, 153, 0.48);
+}
+
+/* valores hsl */
+.color-hsl {
+    color: hsl(9, 91%, 53%);
+}
+
+/* background */
+.bg {
+    background-color: #f6f206;
+    padding: 10px;
+    color: darkblue;
+}
+
+.bg-2 {
+    background-color: black;
+    padding: 10px;
+    color: rgb(3, 232, 248);
+}
+
+/* opacity */
+.bg-opacity {
+    background-color: green;
+    padding: 10px;
+    color: yellow;
+    opacity: 0.3;
+}
+.bg-opacity2 {
+    background-color: rgb(7, 19, 136);
+    padding: 10px;
+    color: rgb(28, 248, 240);
+    opacity: 0.7;
+}
+
+/* rgba com opacidade */
+.rgba-opacity {
+    background-color: rgba(95, 20, 5, 0.7);
+    padding: 10px;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    font-size: 20px;
+}
+
+/* bg images */
+.bg-image {
+    background-image: url("../img/nature.jpg");
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/* bg images centralizadas */
+.not-centered-bg,
+.centered-bg {
+    height: 400px;
+    width: 400px;
+    background-image: url("../img/bridge.jpg");
+    border-radius: 30px;
+}
+
+.centered-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* altura e largura */
+.height-width {
+    height: 100px;
+    width: 200px;
+    background-color: orange;
+    padding: 10px;
+    color: white;
+}
+
+.height-width2 {
+    height: 200px;
+    background-color: blue;
+    color: white;
+}
+
+/* padding */
+.without-padding,
+.with-padding {
+    background-color: red;
+    color: white;
+}
+.with-padding {
+    background-color: blue;
+    padding: 20px;
+}
+
+.padding-individual {
+    background-color: green;
+    color: white;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+}
+
+/* shorthand padding */
+.shorthand-padding {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px 30px 40px; /* top right bottom left */
+}
+.shorthand-padding-2 {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px; /* top/bottom right/left */
+}
+
+/* padding com width */
+.without-border-box {
+    background-color: rgb(215, 235, 37);
+    color: rgb(9, 2, 2);
+    padding: 50px;
+    width: 400px;
+}
+
+.border-box {
+    background-color: #29daf9;
+    color: black;
+    padding: 50px;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+/* border */
+.border {
+    border: 5px solid red;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.border-2 {
+    border: 10px dashed blue;
+    /* dotted, dashed, double, groove, ridge, inset, outset */
+    padding: 10px;
+    background-color: orange;
+    color: white;
+}
+
+.border-left {
+    border-left: 3px dotted green;
+    padding: 25px;
+    background-color: purple;
+    color: white;
+}
+
+.border-bottom {
+    border-bottom: 3px inset rgb(25, 0, 255);
+    padding: 25px;
+    background-color: brown;
+    color: white;
+}
+
+.border-radius {
+    border: 4px solid rgb(246, 10, 10);
+    border-radius: 15px;
+    padding: 25px;
+    background-color: rgb(24, 241, 234);
+    color: rgb(208, 17, 242);
+}
+
+.radius-without-border {
+    border-radius: 30px;
+    padding: 25px;
+    background-color: rgb(255, 105, 0);
+    color: white;
+}
+
+/* margin */
+.margin {
+    background-color: black;
+    color: white;
+    margin: 10px;
+}
+.margin-top {
+    background-color: blue;
+    color: white;
+    margin-top: 50px;
+    padding: 10px;
+}
+.margin-shorthand {
+    background-color: green;
+    color: white;
+    margin: 5px 10px 15px 20px; /* top right bottom left */
+    padding: 10px;
+}
+
+/* Box model */
+.box-model {
+    background-color: orange;
+    color: rgb(47, 13, 244);
+    border: 3px solid greenyellow;
+    padding: 15px 25px; /* top/bottom right/left */
+    border-radius: 7px;
+    margin: 20px;
+    width: 300px;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+/* Text alignment */
+.text-right {
+    text-align: right;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.text-center {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    width: 700px;
+    border: 2px solid violet;
+}
+
+/* text decoration */
+.underline {
+    text-decoration: underline;
+}
+.line-through {
+    text-decoration: line-through;
+    color: red;
+}
+.remove-underline {
+    text-decoration: none;
+    color: blue;
+}
+
+/* text transform */
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* letter spacing */
+.spacing {
+    letter-spacing: 5px;
+}
+
+/* Fonts */
+.serif {
+    font-family: serif;
+}
+
+.sans-serif {
+    font-family: sans-serif;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+.multiple-fonts {
+    font-family: Georgia;
+}
+
+/* font style */
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+/* font weight */
+.font-weight-bold, .font-weight-light {
+    font-family: Helvetica;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+    font-size: 45px;
+}
+.font-weight-light {
+    font-weight: 300;
+    font-size: 40px;
+}
+
+/* Display */
+.inline-box {
+    background-color: orange;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+.block {
+    background-color: purple;
+    margin: 10px;
+    display: block;
+    color: white;
+}
+
+/* invisible */
+.invisible {
+    display: none;
+    /* visibility: hidden;  mantém o espaço ocupado na página */
+    /* display: none; remove o espaço ocupado na página */
+}
+
+/* Positions : static, relative, absolute, relative com absolute, fixed, sticky */
+.static {
+    position: static;
+    background-color: #391;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+.relative {
+    position: relative;
+    background-color: #896;
+    color: white;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 100px;
+}
+
+.absolute {
+    position: absolute;
+    background-color: #659;
+    color: white;
+    width: 100px;
+    height: 100px;
+    top: 2px;
+    right: 2px;
+}
+
+/* Relative com absolute */
+.relative-container {
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+    margin-top: 120px;
+    position: relative;
+}
+
+.absolute-1, .absolute-2 {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    position: absolute;
+}
+
+.absolute-1 {
+    top: 10px;
+    left: 10px;
+}
+
+.absolute-2 {
+    bottom: 10px;
+    right: 10px;
+}
+/* fixed */
+.fixed {
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+    background-color: yellow;
+    position: fixed;
+    top: 50px;
+    right: 100px;
+}
+
+.sticky {
+    width: 100px;
+    height: 100px;
+    border: 1px solid green;
+    background-color: #994;
+    position: sticky;
+    top: 50px;
+    right: 100px;
+}
+
+/* z-index */
+.absolute-3, .absolute-4, .absolute-5 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #123;
+}
+
+.absolute-3 {
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.absolute-4 {
+    top: 10px;
+    left: 10px;
+    background-color: #246;
+    z-index: 2;
+}
+.absolute-5 {
+    top: 40px;
+    left: 40px;
+    background-color: rgb(45, 245, 245);
+    z-index: 1;
 }
